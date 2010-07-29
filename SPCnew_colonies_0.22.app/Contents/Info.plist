@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>CFBundleName</key>
+	<string>SPCnew_colonies_0.22</string>
+	<key>CFBundleIdentifier</key>
+	<string>SPCStatic</string>
+	<key>CFBundleVersion</key>
+	<string>100.0</string>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<string>true</string>
+	<key>CFBundleExecutable</key>
+	<string>JavaApplicationStub</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleIconFile</key>
+	<string>SPCnewcolonies.icns</string>
+	<key>Java</key>
+	<dict>
+		<key>MainClass</key>
+		<string>SPCStatic</string>
+		<key>JVMVersion</key>
+		<string>1.5+</string>
+		<key>Arguments</key>
+		<string>0.22</string>
+		<key>ClassPath</key>
+			<string>$JAVAROOT/</string>
+	</dict>
+</dict>
+</plist>
