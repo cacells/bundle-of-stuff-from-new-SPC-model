@@ -1,0 +1,18 @@
+SPCnew_colonies and SPCnew_stain will install clickable apps of this name in your Applications folder.
+These apps use a SC fraction of .22 (from Clayton).
+
+Alternatively you could run SPCStatic (one experiment at one SC fraction showing cells and cellular stain) or SPCStatic batch (many experiments at frac from 0.2 to 0.5 and results output to txt files. Occasional screen images.)
+
+To run SPCStatic just use
+
+java SPCStatic
+
+or
+
+java SPCStatic frac
+
+where frac is an SC fraction such as 0.22
+
+To run SPCStaticBatch use
+
+java SPCStaticBatch

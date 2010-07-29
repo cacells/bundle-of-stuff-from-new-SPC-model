@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1.000000" authoringTool="com.apple.PackageMaker" authoringToolVersion="3.0.1" authoringToolBuild="172">
+    <title>SPCnew_colonies</title>
+    <options customize="never" allow-external-scripts="no" rootVolumeOnly="false"/>
+    <domains enable_anywhere="true" enable_currentUserHome="true"/>
+    <choices-outline>
+        <line choice="choice0"/>
+    </choices-outline>
+    <choice id="choice0" title="SPCnew_colonies_0.22">
+        <pkg-ref id="hkffbjb.com.au.spcnewcolonies.spcnewcolonies022.pkg"/>
+    </choice>
+    <pkg-ref id="hkffbjb.com.au.spcnewcolonies.spcnewcolonies022.pkg" installKBytes="852" version="1" auth="Root">file:./Contents/Packages/spcnewcolonies022.pkg</pkg-ref>
+    <pkg-ref id="hkffbjb.com.au.spcnewcolonies.spcnewcolonies022.pkg">
+        <relocate search-id="pkmktoken2">
+            <bundle id="SPCStatic"/>
+        </relocate>
+    </pkg-ref>
+    <locator>
+        <search id="pkmktoken2-1" type="component">
+            <bundle CFBundleIdentifier="SPCStatic" path="/Applications/SPCnew_colonies_0.22.app"/>
+        </search>
+        <search id="pkmktoken2-0" type="script" script="pkmktoken2_combined()">
+            <script>
+function pkmktoken2_combined() {
+	function pkmk_add_results_to_array(results, array) {
+		for(i = 0; i &lt; results.length; i++)
+			array.push(results[i]);
+	}
+	var result = new Array();
+	var search;
+	search = my.search.results['pkmktoken2-1'];
+	if(search) pkmk_add_results_to_array(search, result);
+	return result;
+}
+</script>
+        </search>
+        <search type="script" id="pkmktoken2" script="pkmktoken2_final()">
+            <script>
+function pkmktoken2_final() {
+	var combined = my.search.results['pkmktoken2-0'];
+	return combined;
+}
+</script>
+        </search>
+    </locator>
+</installer-script>
